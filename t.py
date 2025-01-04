@@ -1,4 +1,4 @@
-imoort os
+import os
 os.system('cp Zundamon「なのだ」1735928147797.mp4 1.mp4')
 os.mkdir('morr')
 os.system('cp 1.mp4 morr/1.mp4')
