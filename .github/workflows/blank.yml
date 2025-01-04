@@ -27,10 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: curl https://github.com/526awd/Hhh/raw/refs/heads/main/Zundamon%E3%80%8C%E3%81%AA%E3%81%AE%E3%81%A0%E3%80%8D1735928147797.mp4 > 1.mp4
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          ls
