@@ -33,13 +33,14 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          curl http://launchpadlibrarian.net/756579503/ffmpeg_7.1-3ubuntu1_amd64.deb > 1.deb 
+          mkdir deb
+          curl http://launchpadlibrarian.net/756579503/ffmpeg_7.1-3ubuntu1_amd64.deb > deb/1.deb 
           curl  https://github.com/526awd/Hhh/raw/refs/heads/main/Zundamon%E3%80%8C%E3%81%AA%E3%81%AE%E3%81%A0%E3%80%8D1735928147797.mp4 --output 1.mp4 
 
       # Runs a set of commands using the runners shell
       - uses: knu/apt-bundle@v1
         with:
-          debfile: 1.deb  # optional; "Debfile" by default
+          debfile: deb/1.deb  # optional; "Debfile" by default
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
