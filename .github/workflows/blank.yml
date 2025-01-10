@@ -22,27 +22,27 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      #- uses: actions/checkout@v4
-      #- uses: actions/setup-python@v5
-     #   with:
-      #   python-version: '3.13' 
-      #- run: echo python
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+         python-version: '3.13' 
+      - run: echo python
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      #- uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
       
       # Runs a set of commands using the runners shell
-      #- uses: knu/apt-bundle@v1
-      #  with:
-      #    debfile: Debfile  # optional; "Debfile" by default
+      - uses: knu/apt-bundle@v1
+        with:
+          debfile: Debfile  # optional; "Debfile" by default
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project
-          # python t.py
+           python t.py
           mkdir dd
-          curl  https://storage.googleapis.com/android-build/builds/aosp-android10-gsi-linux-aosp_arm64_ab-userdebug/11690951/d405683c6aabfe91d0406e4dc88075602d88e3b32c7502f44f8fba1be3782576/aosp_arm64_ab-img-11690951.zip?GoogleAccessId=gcs-sign%40android-builds-project.google.com.iam.gserviceaccount.com&Expires=1736047337&Signature=AFgXnOeI0MQV2zwUXEaDMmU5QJY%2BonKCDktZXFUhZQeKQhTh5rt4wPqS%2FU7HQ1iw4gQU%2BNB7zFS90MWxWsYzCS8FIK6ZtH%2BTZrcR5rjczWoX%2BMB2bTMyAL8A8SiKaysf0ANxC7jXaOZW%2FTsbqlRNVERMsLDm7ukX61cvr3C5MFKT3ywPlPWO6RN7qX40UOJov1NxK6of8E4t7WlHtBTWQltcSJ9OW%2BS%2FiLnXO2eS3Aa2%2BGpqsPvVYVAB4hF%2BI%2BtAJY3PntV%2BkzckGpzSEpOhQIhpkuvadzSdutEgdfaySSBio2Fc8nDDkxJYBRHiKFhZcn5tM00orTxCaS0MsX22LQ%3D%3D > dd/t.zip 
+          
       
       - uses: actions/upload-artifact@v3
         with:
