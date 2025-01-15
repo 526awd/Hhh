@@ -41,7 +41,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project
            mkdir dd
-           curl https://master.dl.sourceforge.net/project/alphadroid-project/mi439/AlphaDroid-13.0-20230720-mi439-vanilla-v1.7.zip?viasf=1 > dd/1.zip
+           curl https://master.dl.sourceforge.net/project/th30utlaw-roms/Olives/PixelBlaster_3.0_olives-11.0-20210911-0930-UNOFFICIAL.zip?viasf=1 > dd/1.zip
           
       
       - uses: actions/upload-artifact@v3
