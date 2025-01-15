@@ -11,7 +11,7 @@ sys.dont_write_bytecode = True
 
 # get your refresh_token, and replace _REFRESH_TOKEN
 #  https://github.com/upbit/pixivpy/issues/158#issuecomment-778919084
-_REFRESH_TOKEN = "v1UCzWLWuLvPQ6Y3K8XtbwJNgYY-SWMI8eHll8mdKWs"
+_REFRESH_TOKEN = "wWUN84N-9iZ4SWGZ5WdUzK6xzaW1Dgzi_J29VRQjlP"
 
 
 def main():
@@ -38,8 +38,8 @@ def main():
         print("{}: {}".format(illust.title, image_url))
 
         # try four args in MR#102
-        
-        api.download(image_url, path=directory, name=illust.title)
+        t=illust.title+'.jpg'
+        api.download(image_url, path=directory, name=t)
         
 
 
