@@ -11,7 +11,7 @@ sys.dont_write_bytecode = True
 
 # get your refresh_token, and replace _REFRESH_TOKEN
 #  https://github.com/upbit/pixivpy/issues/158#issuecomment-778919084
-_REFRESH_TOKEN = "0zeYA-PllRYp1tfrsq_w3vHGU1rPy237JMf5oDt73c4"
+_REFRESH_TOKEN = "v1UCzWLWuLvPQ6Y3K8XtbwJNgYY-SWMI8eHll8mdKWs"
 
 
 def main():
@@ -51,7 +51,7 @@ def main():
             # path will not work due to fname is a handler
             api.download(
                 image_url,
-                path="/foo/bar",
+                path="directory",
                 fname=open("{}/illust_{}.jpg".format(directory, illust.id), "wb"),
             )
 
