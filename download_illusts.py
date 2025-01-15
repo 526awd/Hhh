@@ -24,7 +24,7 @@ def main():
     api.auth(refresh_token=_REFRESH_TOKEN)
 
     # get rankings
-    json_result = api.illust_ranking("day", date="2019-01-01")
+    json_result = api.illust_recommended()
 
     directory = "illusts"
     if not os.path.exists(directory):
