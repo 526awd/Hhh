@@ -40,6 +40,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project
+          pip install pixivpy3 --upgrade
           python download_illusts.py
            
       
