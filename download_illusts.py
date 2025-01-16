@@ -39,8 +39,10 @@ def main():
 
         # try four args in MR#102
         
-        api.download(image_url, path=directory, name=illust.title)
-        
+        url_basename = os.path.basename(image_url)
+        extension = os.path.splitext(url_basename)[1]
+        name = f"illust_id_{illust.id}_{illust.title}{extension}"
+        api.download(image_url, path=directory, name=name)
 
 
 if __name__ == "__main__":
