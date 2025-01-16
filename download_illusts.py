@@ -38,8 +38,8 @@ def main():
         print("{}: {}".format(illust.title, image_url))
 
         # try four args in MR#102
-        t=illust.title+'.jpg'
-        api.download(image_url, path=directory, name=t)
+        
+        api.download(image_url, path=directory, name=illust.title)
         
 
 
