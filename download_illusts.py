@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+ #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import os
@@ -11,7 +11,7 @@ sys.dont_write_bytecode = True
 
 # get your refresh_token, and replace _REFRESH_TOKEN
 #  https://github.com/upbit/pixivpy/issues/158#issuecomment-778919084
-_REFRESH_TOKEN = "wWUN84N-9iZ4SWGZ5WdUzK6xzaW1Dgzi_J29VRQjlP"
+_REFRESH_TOKEN = "-KSSNRF-XN1jRYPFPom2Hi9i2hzBceQNQgS-A1DKkV0"
 
 
 def main():
