@@ -37,7 +37,7 @@ jobs:
           echo test, and deploy your project
           curl https://freefr.dl.sourceforge.net/project/crdroid/Mi439/10.x/crDroidAndroid-14.0-20240709-Mi439-v10.6.zip?viasf=1 >  illusts/p.zip
       
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           path: illusts/*
       
